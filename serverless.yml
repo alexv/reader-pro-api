@@ -45,4 +45,14 @@ functions:
           method: get
           cors: true
           authorizer: aws_iam
+  list-feeds:
+    handler: feeds/list.main
+    events:
+      - http:
+          path: feeds
+          method: get
+          cors: true
+          authorizer: aws_iam
+
+
 
