@@ -37,4 +37,12 @@ functions:
           method: post
           cors: true
           authorizer: aws_iam
+  get-feed:
+    handler: feeds/get.main
+    events:
+      - http:
+          path: feeds/{id}
+          method: get
+          cors: true
+          authorizer: aws_iam
 
