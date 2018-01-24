@@ -29,8 +29,9 @@ functions:
   # - method: POST request
   # - cors: enabled CORS (Cross-Origin Resource Sharing) for browser cross domain api call
   # - authorizer: authenticate using the AWS IAM role
+  # User feeds
   create-feed:
-    handler: feeds/create.main
+    handler: functions/user-feeds/create.main
     events:
       - http:
           path: feeds
@@ -38,7 +39,7 @@ functions:
           cors: true
           authorizer: aws_iam
   get-feed:
-    handler: feeds/get.main
+    handler: functions/user-feeds/get.main
     events:
       - http:
           path: feeds/{id}
@@ -46,7 +47,7 @@ functions:
           cors: true
           authorizer: aws_iam
   list-feeds:
-    handler: feeds/list.main
+    handler: functions/user-feeds/list.main
     events:
       - http:
           path: feeds
@@ -54,7 +55,7 @@ functions:
           cors: true
           authorizer: aws_iam
   update-feed:
-    handler: feeds/update.main
+    handler: functions/user-feeds/update.main
     events:
       - http:
           path: feeds/{id}
@@ -62,10 +63,11 @@ functions:
           cors: true
           authorizer: aws_iam
   delete-feed:
-    handler: feeds/delete.main
+    handler: functions/user-feeds/delete.main
     events:
       - http:
           path: feeds/{id}
           method: delete
           cors: true
           authorizer: aws_iam
+  # Feeds
