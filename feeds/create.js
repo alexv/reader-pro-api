@@ -9,8 +9,8 @@ export async function main(event, context, callback) {
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
       feedId: uuid.v1(),
-      content: data.content,
-      attachment: data.attachment,
+      name: data.name,
+      url: data.url,
       createdAt: new Date().getTime(),
     },
   };

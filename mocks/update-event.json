@@ -1,5 +1,5 @@
 {
-  "body": "{\"content\":\"new world\",\"attachment\":\"new.jpg\"}",
+  "body": "{\"name\":\"updatedtitel\",\"url\":\"newurl.com\"}",
   "pathParameters": {
     "id": "32adaaa0-fba4-11e7-b747-0555046fa05d"
   },
