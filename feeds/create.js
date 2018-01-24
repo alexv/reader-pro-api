@@ -11,7 +11,7 @@ export async function main(event, context, callback) {
       feedId: uuid.v1(),
       feedName: data.feedName,
       feedUrl: data.feedUrl,
-      createdAt: new Date().getTime(),
+      addedAt: new Date().getTime(),
     },
   };
   try {
