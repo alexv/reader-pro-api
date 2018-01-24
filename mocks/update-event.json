@@ -1,7 +1,7 @@
 {
-  "body": "{\"name\":\"updatedtitel\",\"url\":\"newurl.com\"}",
+  "body": "{\"feedName\":\"new world\",\"feedUrl\":\"new.jpg\"}",
   "pathParameters": {
-    "id": "32adaaa0-fba4-11e7-b747-0555046fa05d"
+    "id": "2de08ec0-0121-11e8-aecc-ddc6eb9af90a"
   },
   "requestContext": {
     "identity": {
